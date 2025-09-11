@@ -76,7 +76,7 @@ const Questionnaire = ({ isDarkMode, textPrimary, textSecondary, buttonBg, keywo
     setRecError(null);
     try {
       const allText = Object.values(answers).join(' ');
-      const res = await fetch('http://127.0.0.1:5000/api/recommendations', {
+      const res = await fetch('https://lucidly-backend.onrender.com/api/recommendations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: allText }),
@@ -125,7 +125,7 @@ const Questionnaire = ({ isDarkMode, textPrimary, textSecondary, buttonBg, keywo
     }
 
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/check', {
+      const res = await fetch('https://lucidly-backend.onrender.com/api/check', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
