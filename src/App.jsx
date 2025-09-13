@@ -145,7 +145,7 @@ const App = () => {
                 <div className="lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center">
                     <div className={`w-80 h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center relative overflow-hidden shadow-2xl`}>
                         <img 
-                            src="/assets/lucidly-logo.png" alt="Lucidly Logo"
+                            src="/assets/lucidly-logo.png" alt="Lucidly-Logo"
                             className="w-full h-full object-cover"
                             onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/400x400/E2E8F0/A0AEC0?text=Image+Not+Found'; }}
                         />
