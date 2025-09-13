@@ -124,29 +124,33 @@ const App = () => {
         )}
 
         {/* Hero Section */}
-        <header id="home" className={`hero-bg flex items-center justify-center p-8 md:p-12 relative overflow-hidden ${isDarkMode ? 'dark:text-gray-100' : 'text-gray-800'}`}>
+<header id="home" className={`hero-bg flex items-center justify-center p-8 md:p-12 relative overflow-hidden ${isDarkMode ? 'dark:text-gray-100' : 'text-gray-800'}`}>
             <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
-            <div className="lg:w-1/2 text-center lg:text-left p-4">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-                Your Journey <br/> to Mental Wellness
-                </h1>
-                <p className="mt-4 max-w-md mx-auto lg:mx-0">
-                Lucidly helps you track your mood, journal your thoughts, and find clarity in your day-to-day life.
-                </p>
-                <div className="mt-8 flex justify-center lg:justify-start space-x-4">
-                <a onClick={() => navigateTo('journaling')} className={`py-3 px-6 font-semibold rounded-full transition-colors cursor-pointer ${isDarkMode ? 'bg-gray-200 text-gray-900 hover:bg-white' : 'bg-gray-900 text-white hover:bg-gray-800'}`}>
-                    Get Started
-                </a>
-                <a onClick={() => navigateTo('about')} className={`py-3 px-6 bg-transparent border font-semibold rounded-full transition-colors cursor-pointer ${isDarkMode ? 'border-gray-200 hover:bg-gray-800' : 'border-gray-900 hover:bg-gray-100'}`}>
-                    Learn More
-                </a>
+                <div className="lg:w-1/2 text-center lg:text-left p-4">
+                    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Your Journey <br/> to Mental Wellness
+                    </h1>
+                    <p className="mt-4 max-w-md mx-auto lg:mx-0">
+                    Lucidly helps you track your mood, journal your thoughts, and find clarity in your day-to-day life.
+                    </p>
+                    <div className="mt-8 flex justify-center lg:justify-start space-x-4">
+                    <a onClick={() => navigateTo('journaling')} className={`py-3 px-6 font-semibold rounded-full transition-colors cursor-pointer ${isDarkMode ? 'bg-gray-200 text-gray-900 hover:bg-white' : 'bg-gray-900 text-white hover:bg-gray-800'}`}>
+                        Get Started
+                    </a>
+                    <a onClick={() => navigateTo('about')} className={`py-3 px-6 bg-transparent border font-semibold rounded-full transition-colors cursor-pointer ${isDarkMode ? 'border-gray-200 hover:bg-gray-800' : 'border-gray-900 hover:bg-gray-100'}`}>
+                        Learn More
+                    </a>
+                    </div>
                 </div>
-            </div>
-            <div className="lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center">
-                <div className={`w-80 h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center relative ${isDarkMode ? 'dark:bg-gray-700' : 'bg-gray-200'}`}>
-                <span className="text-sm">Hero Graphic Placeholder</span>
+                <div className="lg:w-1/2 mt-8 lg:mt-0 relative flex justify-center">
+                    <div className={`w-80 h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center relative overflow-hidden shadow-2xl`}>
+                        <img 
+                            src="/assets/lucidly-logo.png" alt="Lucidly Logo"
+                            className="w-full h-full object-cover"
+                            onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/400x400/E2E8F0/A0AEC0?text=Image+Not+Found'; }}
+                        />
+                    </div>
                 </div>
-            </div>
             </div>
         </header>
 
